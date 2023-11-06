@@ -1,0 +1,24 @@
+{
+  "name": "recipe",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.1",
+    "@types/bcryptjs": "^2.4.5",
+    "@types/jsonwebtoken": "^9.0.4",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/cookie": "^0.7.0",
+    "@prisma/client": "^5.5.2",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "elysia": "^0.7.21",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.11.3",
+    "prisma": "^5.5.2"
+  }
+}
