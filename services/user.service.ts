@@ -52,8 +52,8 @@ export const login = async (data: { email: string; password: string }) => {
     });
 
     return {
+      message: "User logged in successfully",
       token,
-      user,
     };
   } catch (error) {
     throw error;

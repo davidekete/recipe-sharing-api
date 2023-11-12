@@ -23,12 +23,10 @@ export const recipeController = (app: Elysia) => {
       });
 
       return {
-        message: "Recipe created successfully",
         recipe: newRecipe,
       };
     } catch (error: any) {
       return {
-        message: "Recipe creation failed",
         error: error.message,
       };
     }
@@ -39,12 +37,10 @@ export const recipeController = (app: Elysia) => {
       const recipes = await getAllRecipes();
 
       return {
-        message: "Recipes retrieved successfully",
         recipes,
       };
     } catch (error: any) {
       return {
-        message: "Recipes retrieval failed",
         error: error.message,
       };
     }

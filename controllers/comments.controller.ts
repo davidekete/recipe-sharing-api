@@ -27,7 +27,6 @@ export const commentController = (app: Elysia) => {
       });
     } catch (error: any) {
       return {
-        message: "Comment creation failed",
         error: error.message,
       };
     }
@@ -40,12 +39,10 @@ export const commentController = (app: Elysia) => {
       const comments = await getAllCommentsForRecipe(+recipeId);
 
       return {
-        message: "Comments retrieved successfully",
         comments,
       };
     } catch (error: any) {
       return {
-        message: "Comments retrieval failed",
         error: error.message,
       };
     }

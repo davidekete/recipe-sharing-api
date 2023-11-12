@@ -17,7 +17,7 @@
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "elysia": "^0.7.21",
-    "jsonwebtoken": "^9.0.2",
+    "jsonwebtoken": "8.5.1",
     "pg": "^8.11.3",
     "prisma": "^5.5.2"
   }

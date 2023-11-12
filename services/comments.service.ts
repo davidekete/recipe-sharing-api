@@ -34,29 +34,3 @@ export const getAllCommentsForRecipe = async (recipeId: number) => {
 
   return comments;
 };
-
-export const getCommentById = async (id: number) => {
-  const comment = await prisma.comment.findUnique({
-    where: {
-      id,
-    },
-    include: {
-      user: true,
-    },
-  });
-
-  return comment;
-};
-
-// export const updateComment = async (id: number, body: string) => {
-//   const comment = await prisma.comment.update({
-//     where: {
-//       id,
-//     },
-//     data: {
-//       body,
-//     },
-//   });
-
-//   return comment;
-// };

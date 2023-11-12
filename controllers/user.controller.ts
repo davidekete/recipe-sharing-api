@@ -13,12 +13,10 @@ export const userController = (app: Elysia) => {
       });
 
       return {
-        message: "Account created successfully",
         user: newUser,
       };
     } catch (error: any) {
       return {
-        message: "Account creation failed",
         error: error.message,
       };
     }
@@ -34,12 +32,11 @@ export const userController = (app: Elysia) => {
       });
 
       return {
-        message: "Login successful",
         user: loggedInUser,
       };
     } catch (error: any) {
+      console.log(error)
       return {
-        message: "Login failed",
         error: error.message,
       };
     }
