@@ -25,6 +25,8 @@ export const commentController = (app: Elysia) => {
         recipeId: +recipeId,
         userId: verifiedToken?.id,
       });
+
+      return newComment;
     } catch (error: any) {
       return {
         error: error.message,
